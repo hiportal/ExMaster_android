@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PermissionActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="100"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:paddingLeft="10px"
+            android:weightSum="100"
+            android:background="@color/colorBackground"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="15"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="100"
+                    android:src="@drawable/img_header_logo">
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="80"
+                android:weightSum="100"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    android:paddingLeft="30px"
+                    android:paddingTop="6px"
+                    android:text="자재·장비대금 지킴이"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="60px"
+                    android:textStyle="bold"
+                    android:layout_gravity="left|center"></TextView>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="17"
+            android:text="앱 사용을 위해 \n다음 권한 허용이 필요합니다."
+            android:textColor="@color/colorBtnSmall"
+            android:gravity="center" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="100px"
+            android:layout_marginRight="100px"
+            android:background="@color/colorBtnSmall">
+        </View>
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="44"
+            android:weightSum="100"
+            android:layout_marginTop="100px"
+            android:paddingLeft="100px"
+            android:paddingRight="100px"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="40"
+                android:weightSum="100"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="25"
+                    android:orientation="vertical"
+                    android:gravity="center" >
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="40"
+                        android:paddingBottom="10dp"
+                        android:text="저장소"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"
+                        android:gravity="center" >
+                    </TextView>
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="50"
+                        android:src="@drawable/ic_charge_term"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="75"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_content03"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="100"
+                        android:text="앱 사용을 위해 \n외부저장소 사용을 허용합니다."
+                        android:textColor="@color/colorBtnSmall"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="60"
+                android:weightSum="100"
+                android:orientation="horizontal" >
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="100px"
+            android:layout_marginRight="100px"
+            android:background="@color/colorBtnSmall">
+        </View>
+
+        <TextView
+            android:id="@+id/tv_explain"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="17"
+            android:text="앱 접근 권한 거부 시, \n 앱이 정상작동되지 않을 수 있습니다."
+            android:textColor="@color/colorBtnSmall"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="허 용"
+            android:textSize="20dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/custom_permission_button"></Button>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"></LinearLayout>
+
+
+    </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

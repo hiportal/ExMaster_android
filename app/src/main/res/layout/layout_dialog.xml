@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/ll_topbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTopBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="250dp"
+            android:weightSum="100"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:background="@color/colorBackground">
+                <TextView
+                    android:id="@+id/dialog_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:textSize="16dp"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/app_name"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="1.2dp"
+                android:background="#000000"></View>-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="55"
+                android:background="#ffffff">
+                <TextView
+                    android:id="@+id/dialog_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorBlack"
+                    android:text="다이얼로그 알림"
+                    android:lineSpacingExtra ="5dp"
+                    android:background="@color/colorWhite"
+                    android:padding="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="25"
+                android:weightSum="100"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="40"
+                    android:weightSum="100"
+                    android:orientation="vertical"
+                    android:gravity="top">
+                    <Button
+                        android:id="@+id/btn_confirm"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="55"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14dp"
+                        android:text="확 인"
+                        android:gravity="center"
+                        android:background="@drawable/custom_dialog_button"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

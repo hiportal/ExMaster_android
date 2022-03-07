@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true" usesCleartextTraffic="true">
+        <domain includeSubdomains="true">ecard.ex.co.kr</domain>
+        <domain includeSubdomains="true">travel.ex.co.kr</domain>
+        <domain includeSubdomains="true">nice.checkplus.co.kr</domain>
+
+
+    </domain-config>
+</network-security-config>
